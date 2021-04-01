@@ -1,11 +1,11 @@
-let a = prompt("First text: ");
+dlet a = prompt("First text: ");
 a = a.toLowerCase()
 a = a.replaceAll(".", "");
 a = a.replaceAll(",", "");
 a = a.replaceAll(")", "");
 a = a.replaceAll("(", "");
 a = a.split(" ");
-let b = prompt("First text: ");
+let b = prompt("Second text: ");
 b = b.toLowerCase()
 b = b.replaceAll(".", "");
 b = b.replaceAll(",", "");
