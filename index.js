@@ -56,9 +56,14 @@ function deleteEmpty(a) {
 }
 
 
-
+    if(tag.length==0){
+    document.querySelector("#textShow").innerHTML = "Please type some word.";
+    }else{
 document.querySelector("#textShow").innerHTML = "<p>We excluded some word like an, of, my, etc.</p> <h3>Total similar Words: " + tag.length + ".</h3>" + "<h3>The words are:  </h3> <p id='forTag'>  </p> ";
 document.querySelector("#forTag").innerText = tag[0];
+}
+
+
 
 for(let i=1;i<tag.length;i++){
     document.querySelector("#forTag").innerText = document.querySelector("#forTag").innerText + ", " + tag[i] ;
