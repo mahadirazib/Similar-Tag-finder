@@ -41,7 +41,7 @@ if (numbera<numberb){
     num = numbera;
 }
 
-let ignore = ["to","and","or","but","the","a","an","in","on","at","it","i","me","my","you","your","will","of","for","is","so","with","if",",",".",":","/","-","_"];
+let ignore = ["to","and","or","but","the","a","an","in","on","at","it","i","me","my","you","your","of","for","is","so","as","with","if",",",".",":","/","-","_"];
 
 for (let i = 0; i < num ; i++) {
     if (b.includes(a[i]) && ignore.includes(a[i])== false){
@@ -57,7 +57,7 @@ function deleteEmpty(a) {
 
 
 
-document.querySelector("#textShow").innerHTML = "<p>We excluded some word like an, the, my, etc.</p> <h3>Total similar Words: " + tag.length + ".</h3>" + "<h3>The words are:  </h3> <p id='forTag'>  </p> ";
+document.querySelector("#textShow").innerHTML = "<p>We excluded some word like an, of, my, etc.</p> <h3>Total similar Words: " + tag.length + ".</h3>" + "<h3>The words are:  </h3> <p id='forTag'>  </p> ";
 document.querySelector("#forTag").innerText = tag[0];
 
 for(let i=1;i<tag.length;i++){
