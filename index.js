@@ -1,4 +1,17 @@
 
+document.querySelectorAll("textarea")[0].addEventListener("click",bgNone0);
+
+function bgNone0(){
+    document.querySelectorAll("textarea")[0].style.background = "none";
+}
+
+document.querySelectorAll("textarea")[1].addEventListener("click",bgNone1);
+
+function bgNone1(){
+    document.querySelectorAll("textarea")[1].style.background = "none";
+}
+
+
 
 
 document.querySelector("#check").addEventListener("click",checkingTag);
@@ -52,5 +65,5 @@ for(let i=1;i<tag.length;i++){
 }
 
 
-console.log("Done.");
+console.log(tag);
 }
