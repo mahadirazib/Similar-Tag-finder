@@ -44,10 +44,18 @@ h3{
   width: 400px;
   height: 150px;
   margin: 20px 50px;
+  padding: 10px;
   font-family: 'Montserrat', sans-serif;
-  outline: 3px solid #67b146;
+  background: url(Text.png) center center no-repeat;
+  outline: 1px solid #67b146;
   border: none;
 }
+
+#firstText:focus, #secondText:focus{
+  outline: 3px solid #70d442;
+}
+
+
 
 #forTag{
   width: 80%;
@@ -92,8 +100,8 @@ h3{
     <h2>Place your text:</h2>
 
 
-    <textarea placeholder="Enter your first text" id="firstText"></textarea>
-    <textarea placeholder="Enter your second text" id="secondText"></textarea>
+    <textarea id="firstText"></textarea>
+    <textarea id="secondText"></textarea>
 
     <button id="check" class="myButton">Find similar</button>
 
