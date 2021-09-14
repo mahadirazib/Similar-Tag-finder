@@ -57,7 +57,7 @@ function deleteEmpty(a) {
 
 
     if(tag.length==0){
-    document.querySelector("#textShow").innerHTML = "Please type some words in the text area.";
+    document.querySelector("#textShow").innerHTML = "No similar word.";
     }else{
 document.querySelector("#textShow").innerHTML = "<p>We excluded some word like an, of, my, etc.</p> <h3>Total similar Words: " + tag.length + ".</h3>" + "<h3>The words are:  </h3> <p id='forTag'>  </p> ";
 document.querySelector("#forTag").innerText = tag[0];
