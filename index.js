@@ -52,5 +52,5 @@ for(let i=1;i<tag.length;i++){
 }
 
 
-console.log(tag);
+console.log("Done.");
 }
