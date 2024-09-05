@@ -41,10 +41,10 @@ if (numbera<numberb){
     num = numbera;
 }
 
-let ignore = ["to","and","or","but","the","a","an","in","on","at","it","i","me","my","you","your","of","for","is","so","as","with","if",",",".",":","/","-","_"];
+let ignore = [",",".",":","/","-","_"];
 
 for (let i = 0; i < num ; i++) {
-    if (b.includes(a[i]) && ignore.includes(a[i])== false){
+    if (b.includes(a[i]) && tag.includes(a[i])==false && ignore.includes(a[i])== false){
         tag.push(a[i]);
     }
 }
@@ -70,5 +70,5 @@ for(let i=1;i<tag.length;i++){
 }
 
 
-console.log(tag);
+// console.log(tag);
 }
